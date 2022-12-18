@@ -2,7 +2,7 @@
 
 *It is not an official Appodeal plugin.*
 
-**This repository contains source code of Appodeal iOS Plugin for Godot engine. If you are loking for an addon itself, follow the first link below.**
+**This repository contains source code of Appodeal iOS Plugin for Godot engine. If you are looking for an addon itself, follow the first link below.**
 
 ## Links:
 
@@ -18,11 +18,11 @@ In case you want to build an iOS plugin yourself (for different Godot Engine or 
 
 0. If you have extracted engine headers, you can skip steps 1-3, and manually put them into `/headers/godot` directory.
 
-1. Add the desired version of [Godot Engine](https://github.com/godotengine/godot) to the [godot folder](godot).
+1. Add the desired version of [Godot Engine](https://github.com/godotengine/godot) to the `/godot` folder.
 
 2. Run `./scripts/generate_headers.sh [3.x|4.0]` in terminal to build the Godot Engine header files.
 
-3. Run `./scripts/export_headers.sh` to copy all required headers into `/headers/godot` directory
+3. Run `./scripts/export_headers.sh` to copy all required headers into `/headers/godot` directory.
 
 4. Download Appodeal iOS SDK fat build archive from the [official website](https://wiki.appodeal.com/en/ios/get-started) and copy the header files from `Appodeal.xcframework` folder into `/headers/appodeal/Appodeal` directory.
 
