@@ -1,4 +1,4 @@
-# Appodeal Godot iOS Plugin
+# Appodeal iOS Plugin for Godot GameEngine
 
 *It is not an official Appodeal plugin.*
 
