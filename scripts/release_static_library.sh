@@ -3,11 +3,10 @@
 # Compile Plugin
 ./scripts/generate_static_library.sh release $1
 ./scripts/generate_static_library.sh release_debug $1
-mv ./bin/appodeal.release_debug.a ./bin/appodeal.debug.a
+mv ./bin/Appodeal.release_debug.a ./bin/Appodeal.debug.a
 
-# Move to release folder
+# Move Plugin to release folder
 rm -rf ./bin/release
 mkdir ./bin/release
-
-# Move Plugin
-mv ./bin/appodeal.{release,debug}.a ./bin/release
+mv ./bin/Appodeal.{release,debug}.a ./bin/release
+cp ./appodeal/Appodeal.gdip ./bin/release

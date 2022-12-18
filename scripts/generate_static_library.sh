@@ -15,4 +15,4 @@ scons target=$1 arch=x86_64 simulator=yes plugin=appodeal version=$2
 lipo -create "./bin/libappodeal.x86_64-simulator.$1.a" \
     "./bin/libappodeal.armv7-ios.$1.a" \
     "./bin/libappodeal.arm64-ios.$1.a" \
-    -output "./bin/appodeal.$1.a"
+    -output "./bin/Appodeal.$1.a"

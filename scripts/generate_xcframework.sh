@@ -21,4 +21,4 @@ lipo -create "./bin/libappodeal.armv7-ios.$1.a" "./bin/libappodeal.arm64-ios.$1.
 xcodebuild -create-xcframework \
     -library "./bin/appodeal-device.$1.a" \
     -library "./bin/appodeal-simulator.$1.a" \
-    -output "./bin/appodeal.$1.xcframework"
+    -output "./bin/Appodeal.$1.xcframework"
