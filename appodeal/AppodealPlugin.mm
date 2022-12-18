@@ -90,7 +90,7 @@ void AppodealPlugin::_bind_methods() {
     ADD_SIGNAL(MethodInfo("on_initialization_finished", PropertyInfo(Variant::STRING, "errors")));
 
     ADD_SIGNAL(MethodInfo("on_inapp_purchase_validate_success", PropertyInfo(Variant::STRING, "json")));
-    ADD_SIGNAL(MethodInfo("on_inapp_puchase_validate_fail", PropertyInfo(Variant::STRING, "reason")));
+    ADD_SIGNAL(MethodInfo("on_inapp_purchase_validate_fail", PropertyInfo(Variant::STRING, "reason")));
 
     ADD_SIGNAL(MethodInfo("on_mrec_loaded", PropertyInfo(Variant::BOOL, "is_precache")));
     ADD_SIGNAL(MethodInfo("on_mrec_failed_to_load"));
@@ -148,7 +148,7 @@ void AppodealPlugin::_bind_methods() {
     ClassDB::bind_method(D_METHOD("trackInAppPurchase", "amount", "currency"), &AppodealPlugin::trackInAppPurchase);
     ClassDB::bind_method(D_METHOD("getNetworks", "ad_type"), &AppodealPlugin::getNetworks);
     ClassDB::bind_method(D_METHOD("disableNetwork", "network"), &AppodealPlugin::disableNetwork);
-    ClassDB::bind_method(D_METHOD("disableNetworkForAdTypes", "nteowrk", "ad_types"), &AppodealPlugin::disableNetworkForAdTypes);
+    ClassDB::bind_method(D_METHOD("disableNetworkForAdTypes", "network", "ad_types"), &AppodealPlugin::disableNetworkForAdTypes);
     ClassDB::bind_method(D_METHOD("setUserId", "user_id"), &AppodealPlugin::setUserId);
     ClassDB::bind_method(D_METHOD("getUserId"), &AppodealPlugin::getUserId);
     ClassDB::bind_method(D_METHOD("getVersion"), &AppodealPlugin::getVersion);
