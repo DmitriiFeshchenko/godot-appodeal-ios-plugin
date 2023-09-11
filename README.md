@@ -24,7 +24,7 @@ In case you want to build an iOS plugin yourself (for different Godot Engine or 
 
 3. Run `./scripts/export_headers.sh` to copy all required headers into `/headers/godot` directory.
 
-4. Download Appodeal iOS SDK fat build archive from the [official website](https://wiki.appodeal.com/en/ios/get-started) and copy the header files from `Appodeal.xcframework` folder into `/headers/appodeal/Appodeal` directory.
+4. Download Appodeal iOS SDK fat build archive from the [official website](https://docs.appodeal.com/ios/get-started) and copy the header files from `Appodeal.xcframework` folder into `/headers/appodeal/Appodeal` directory.
 
 5. Run `./scripts/release_xcframework.sh [3.x|4.0]` to build the plugin.
 
