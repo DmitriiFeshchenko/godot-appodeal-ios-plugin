@@ -1,6 +1,7 @@
 bin/*/
 
 .DS_Store
+.idea/
 
 *.d
 *.o
