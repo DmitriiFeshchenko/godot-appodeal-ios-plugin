@@ -102,7 +102,6 @@ public:
     float getRewardAmount(const String &placementName);
     String getRewardCurrency(const String &placementName);
     void muteVideosIfCallsMuted(bool isMuted);
-    void disableWebViewCacheClear();
     void startTestActivity();
     void setChildDirectedTreatment(bool value);
     void destroy(int adTypes);

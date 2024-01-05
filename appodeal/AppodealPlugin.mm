@@ -167,7 +167,6 @@ void AppodealPlugin::_bind_methods() {
     ClassDB::bind_method(D_METHOD("getRewardAmount", "placement_name"), &AppodealPlugin::getRewardAmount);
     ClassDB::bind_method(D_METHOD("getRewardCurrency", "placement_name"), &AppodealPlugin::getRewardCurrency);
     ClassDB::bind_method(D_METHOD("muteVideosIfCallsMuted", "is_muted"), &AppodealPlugin::muteVideosIfCallsMuted);
-    ClassDB::bind_method(D_METHOD("disableWebViewCacheClear"), &AppodealPlugin::disableWebViewCacheClear);
     ClassDB::bind_method(D_METHOD("startTestActivity"), &AppodealPlugin::startTestActivity);
     ClassDB::bind_method(D_METHOD("setChildDirectedTreatment", "value"), &AppodealPlugin::setChildDirectedTreatment);
     ClassDB::bind_method(D_METHOD("destroy", "ad_types"), &AppodealPlugin::destroy);
@@ -357,7 +356,7 @@ void AppodealPlugin::setLogLevel(int logLevel) {
 }
 
 void AppodealPlugin::setFramework(const String &pluginVersion, const String &engineVersion) {
-    // [Appodeal setFramework:APDFrameworkGodot version:_convertFromString(engineVersion)];
+    [Appodeal setFramework:APDFrameworkGodot version:_convertFromString(engineVersion)];
     [Appodeal setPluginVersion:_convertFromString(pluginVersion)];
 }
 
@@ -399,10 +398,6 @@ String AppodealPlugin::getRewardCurrency(const String &placementName) {
 
 void AppodealPlugin::muteVideosIfCallsMuted(bool isMuted) {
     NSLog(@"muteVideosIfCallsMuted method is not supported on iOS platform");
-}
-
-void AppodealPlugin::disableWebViewCacheClear() {
-    NSLog(@"disableWebViewCacheClear method is not supported on iOS platform");
 }
 
 void AppodealPlugin::startTestActivity() {
